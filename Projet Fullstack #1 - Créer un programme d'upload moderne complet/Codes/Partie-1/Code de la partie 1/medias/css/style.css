@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c3e50;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/******************* H1 ************/
+h1 {
+    color: #f39c12;
+    font-size: 33px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+h1 i {
+    color: #bdc3c7;
+    margin-right: 7px;
+}
+/******************* H1 ************/
+/*******************************/
+
+
+/******************* SECTION 1 ************/
+#section1 {
+    border: 2px dashed #95a9a6;
+    max-width: 750px;
+    width: 70%;
+    height: 380px;
+    color: #95a9a6;
+    font-weight: bold;
+    padding: 7px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section1 i {
+    font-size: 130px;
+}
+#section1 h2 {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+}
+#section1 h2 span {
+    font-size: 40px;
+    display: block;
+}
+#section1 p {
+    font-size: 18px;
+}
+#section1 input {
+    display: none;
+}
+#section1 label {
+    background-color: #7f8c8d;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #bdc3c7;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+#section1 label:hover {
+    background-color: #f39c12;
+    color: #333;
+    transition: 0.5s;
+}
+/******************* SECTION 1 ************/
+/******************* ************/
+
+
+/******************* SECTION 2 ************/
+#section2 {
+    border: 1px dashed #95a9a6;
+    max-width: 750px;
+    width: 70%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: #bdc3c7;
+}
+#section2 h6 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0px 0px 8px;
+}
+#section2 img {
+    height: 100px;
+    margin: 5px;
+}
+/******************* SECTION 2 ************/
+/******************* ************/

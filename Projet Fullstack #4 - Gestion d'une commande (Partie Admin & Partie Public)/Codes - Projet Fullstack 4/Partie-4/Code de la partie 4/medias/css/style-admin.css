@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+    background-image: url('../images/fond-admin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/************* BOX *****************/
+#box {
+    width: 450px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #777;
+}
+#box h1 {
+    background-color: #0b11fe;
+    color: #cecff9;
+    text-align: center;
+    font-size: 19px;
+    margin: 0;
+    padding: 19px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#box p {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+#box h3 {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    border-top: 1px dashed #777;
+    padding-top: 12px;
+}
+/************* BOX *****************/
+/**********************************/
+
+
+
+/************* ARTICLE *****************/
+#box article {
+    padding: 20px;
+}
+
+/************* ARTICLE *****************/
+/**********************************/
+
+
+/************* SECTION *****************/
+#box section {
+    width: 300px;
+    margin: auto;
+    padding: 35px 10px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#box section span {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+#box input[type="text"] {
+    width: 70px;
+    padding: 12px;
+    margin-left: 10px;
+    outline: none;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+#box input[type="text"]:disabled {
+    cursor: not-allowed;
+}
+/************* SECTION *****************/
+/**********************************/
+
+
+
+/************* SWITCH *****************/
+#box input[type="checkbox"] {
+    display: none;
+}
+#box input[type="checkbox"]:checked ~ label::after {
+    content:'';
+    background-color: #d35400;
+    left: 35px;
+    transition: 0.5s;
+}
+#box label {
+    display: block;
+    width: 70px;
+    height: 9px;
+    background-color: #f39c12;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+#box label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 3px #bbb;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+/************* SWITCH *****************/
+/**********************************/

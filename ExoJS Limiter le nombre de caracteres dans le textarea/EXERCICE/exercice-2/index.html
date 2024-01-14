@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript moderne -- CarlBrison.fr</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <form action="traitement.html" method="post" id="formulaire">
+            <h1>Nous contacter</h1>
+            <div class="champ">
+                <label>Votre nom:</label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom">
+            </div>
+            <div class="champ">
+                <label>Votre email:</label>
+                <input type="email" name="email" id="email" placeholder="Votre email">
+            </div>
+            <div class="champ">
+                <label>Votre message:</label>
+                <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                Caractères maximum: <span id="compter" class="green"></span>
+            </div>
+            <div id="info"></div>
+            <button>
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

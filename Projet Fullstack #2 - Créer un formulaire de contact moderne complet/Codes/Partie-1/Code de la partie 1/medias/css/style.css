@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url(../images/fond.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    max-width: 850px;
+    width: 85%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/************* BOX-INFO *******/
+#box-info {
+    background-color: #fff;
+    padding: 20px;
+}
+#box-info h2 {
+    text-align: center;
+    color: rgb(231,119,15);
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+#box-info p {
+    font-size: 16px;
+}
+#box-info ul {
+    margin-top: 45px;
+}
+#box-info ul li {
+    list-style: none;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#box-info ul li i {
+    color: rgb(231,119,15);
+    font-size: 30px;
+    margin-right: 10px;
+}
+#box-info h3 {
+    text-align: center;
+    border-top: 1px dashed rgb(231,119,15);
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+#box-info ul.sociaux {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#box-info ul.sociaux li {
+    margin: 15px;
+}
+#box-info ul.sociaux li a i {
+    color: rgba(231,119,15,0.5);
+    transition: color 0.5s;
+}
+#box-info ul.sociaux li a i:hover {
+    color: rgba(231,119,15,1);
+    transform: scale(1.2);
+}
+/************* BOX-INFO *******/
+/********************/
+
+
+/************* BOX-FORM *******/
+#box-form {
+    background-color: rgb(231,119,15);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    padding: 20px;
+}
+#box-form h2 {
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+#box-form .input-content {
+    position: relative;
+    margin-bottom: 12px;
+}
+#box-form label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+    color: #eceaea;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor:text;
+    transition: 0.5s;
+}
+#box-form label.active {
+    top: 0;
+    left: 25px;
+    padding: 0px 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    background-color: rgb(231,119,15);
+}
+#box-form .textarea label {
+    top: 20px;
+}
+#box-form .textarea label.active {
+    top: 0;
+}
+#box-form input, #box-form textarea {
+    width: 100%;
+    border: 2px solid #f2f2f2;
+    background: none;
+    outline: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+
+    color: #f2f2f2;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+#box-form input:hover, #box-form textarea:hover {
+    border-color:rgba(255,255,255, 0.4);
+}
+#box-form textarea {
+    min-height: 100px;
+    border-radius: 20px;
+    resize: none;
+}
+#box-form input[type="submit"] {
+    background-color: #f2f2f2;
+    color: rgb(231,119,15);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+#box-form input[type="submit"]:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+    transition: background-color 0.5s, color 0.5s;
+}
+/************* BOX-FORM *******/
+/********************/
+
+
+
+@media screen and (max-width: 850px) {
+    body {
+        align-items: flex-start;
+    }
+    #box {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                        "boxForm"
+                        "boxInfo";
+    }
+
+    /************* BOX-INFO *******/
+    #box-info {
+        grid-area: boxInfo;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    /************* BOX-INFO *******/
+    /********************/
+
+
+    /************* BOX-FORM *******/
+    #box-form {
+        grid-area: boxForm;
+
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 0;
+    }
+    /************* BOX-FORM *******/
+    /********************/
+    }

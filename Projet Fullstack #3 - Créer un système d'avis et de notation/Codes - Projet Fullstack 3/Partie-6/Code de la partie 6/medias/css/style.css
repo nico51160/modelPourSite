@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    color: #7f8c8d;
+    background-color: #ecf0f1;
+}
+
+#site {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/**************** HEADER **************/
+header {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #dce1e4;
+    margin-bottom: 40px;
+}
+header h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #000;
+}
+header h1 span {
+    color: #f39c12;
+}
+/**************** HEADER **************/
+/******************************/
+
+
+/**************** ARTICLE **************/
+article {
+    text-align: center;
+}
+article.active {
+    display: none;
+}
+/**************** ARTICLE **************/
+/******************************/
+
+
+/**************** ARTICLE2 **************/
+#article2 {
+    display: none;
+}
+#article2.active {
+    display: block;
+}
+/**************** ARTICLE2 **************/
+/******************************/
+
+
+/**************** SECTION **************/
+article section {
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 4px solid #dce1e4;
+    border-radius: 10px;
+
+    position: relative;
+}
+article section i {
+    cursor: pointer;
+    font-size: 25px;
+    color: #dce1e4;
+}
+article section i.active {
+    color:#f39c12;
+}
+article section i.dessus {
+    color:#f39c12;
+    transform: scale(1.2);
+}
+article section p {
+    font-size: 14px;
+    color: #9ea3a3;
+}
+article section textarea {
+    display: block;
+    width: 80%;
+    height: 100px;
+    border: 1px solid #dce1e4;
+    color: #7f8c8d;
+    margin: 20px auto;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+article section textarea:focus {
+    border-color: #7f8c8d;
+}
+article section textarea::placeholder {
+    color: #dce1e4;
+}
+article section input[type="submit"] {
+    padding: 10px 70px;
+    border-radius: 50px;
+    background-color: #f39c12;
+    color: #f2f2f2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+article section input[type="submit"]:hover {
+    background-color: orange;
+}
+#valider.active {
+    visibility: hidden;
+}
+#erreur {
+    color: red;
+}
+/**************** SECTION **************/
+/******************************/
+
+
+/**************** SECTIONLOAD **************/
+#sectionLoad {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+}
+#sectionLoad.active {
+    display: block;
+}
+/**************** SECTIONLOAD **************/
+/******************************/
+
+
+/**************** AFFICHER NOTE **************/
+#afficherNote {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0;
+    font-weight: 700;
+    color: #f39c12;
+    transition: 0.6s;
+    opacity: 0;
+}
+#afficherNote.active {
+    font-size: 45px;
+    opacity: 1;
+}
+/**************** AFFICHER NOTE **************/
+/******************************/

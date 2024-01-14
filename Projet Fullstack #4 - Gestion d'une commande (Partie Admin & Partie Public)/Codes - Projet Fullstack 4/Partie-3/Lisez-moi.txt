@@ -1,0 +1,5 @@
+Hello !
+
+N'oubliez pas de :
+- Donner une valeur à la variable $expediteur dans fichier EnvoyerMail.php
+- Donner les valeurs à la classe EnvoyerMail dans le fichier executer.php

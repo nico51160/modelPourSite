@@ -1,0 +1,6 @@
+Hello,
+
+Pensez à modifier le fichier cnx/cnx.php et à créer votre BDD
+
+Amusez-vous bien !
+Carl.

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+#box {
+    width: 75%;
+    max-width: 600px;
+    margin: 70px auto;
+    background-color: rgba(255,255,255, 0.6);
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px #555;
+}
+h1 {
+    letter-spacing: 4px;
+}
+.champ {
+    margin-bottom: 25px;
+    background-color: rgba(255,255,255,0.8);
+    border-bottom: 1px solid #ddd;
+}
+.champ label {
+    display: block;
+    text-align: left;
+    padding: 7px 7px;
+    margin-bottom: 5px;
+}
+.champ input, .champ textarea {
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+::placeholder {
+    font-size: 10px;
+    color: #aaa;
+}
+button {
+    background-color: orange;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: orangered;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#info {
+    color: rgb(168,36,47);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+}
+
+#compter {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 4px;
+}
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}

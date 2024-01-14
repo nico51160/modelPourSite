@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript moderne - CarlBrison.fr</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <h1>Private</h1>
+        <form action="traitement.html" method="post" id="formulaire">
+            <div class="champ">
+                <label for="login">Votre Login</label>
+                <input type="text" name="login" id="login" placeholder="Indiquez votre Login">
+            </div>
+            <div class="champ">
+                <label for="pass">Votre Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Indiquez votre Password">
+                <div class="fas fa-eye-slash" id="voirPass"></div>
+            </div>
+            <div id="info"></div>
+            <input type="submit" id="entrer" value="Entrer" disabled>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

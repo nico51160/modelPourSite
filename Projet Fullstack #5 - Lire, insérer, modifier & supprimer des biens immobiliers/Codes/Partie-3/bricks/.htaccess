@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^bien-update-([0-9])+.html$ bien-update.php?bienID=$1 [L]
+RewriteRule ^bien-delete-([0-9])+.html$ bien-delete.php?bienID=$1 [L]

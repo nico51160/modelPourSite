@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#box {
+    width: 75%;
+    max-width: 600px;
+    border: 1px solid #01094f;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: arial;
+    text-align: center;
+    background-color: #0267a9;
+}
+#box h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #03bffd;
+    letter-spacing: 4px;
+}
+
+.champ {
+    border: 1px solid #10094f;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #03bffd;
+    position: relative;
+}
+.champ label {
+    display: block;
+    text-align: left;
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.champ input {
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#entrer {
+    padding: 15px;
+    width: 100%;
+    background-color: #01094f;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+#entrer:disabled {
+    opacity: 0.3;
+    color: #0267a9;
+    cursor: not-allowed;
+}
+#entrer:hover {
+    background-color: #03bffd;
+}
+
+#voirPass {
+    position: absolute;
+    right: 25px;
+    font-size: 22px;
+    color: #01094f;
+    cursor: pointer;
+}
+#voirPass:hover {
+    color: aqua;
+}
+
+::placeholder {
+    color: aqua;
+}
+
+#info {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: orange;
+    font-weight: bold;
+}

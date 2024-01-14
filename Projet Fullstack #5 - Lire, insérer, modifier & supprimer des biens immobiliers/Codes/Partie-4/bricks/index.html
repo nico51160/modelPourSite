@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Biens</title>
+    <link rel="stylesheet" href="medias/css/animate.min.css">
+    <link rel="stylesheet" href="medias/css/loader.css">
+    <link rel="stylesheet" href="medias/css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+    <header>
+        <h1>Liste des Biens</h1>
+        <button>Create</button>
+    </header>
+<!-- HEADER -->
+
+
+<!-- TABLEAU -->
+    <section id="tableau"></section>
+<!-- TABLEAU -->
+
+
+<!-- MODALE -->
+    <div class="box">
+        <div class="modale">
+            <div id="box-insert" class="animate__animated">
+                <span><i class="fa-solid fa-circle-xmark"></i></span>
+                <h3>Insérer un nouveau Bien</h3>
+                <p id="reponse"></p>
+                <form action="" method="post" id="formulaire-bienInsert" enctype="multipart/form-data">
+                    <div>
+                        <label for="bien">bien</label>
+                        <input type="text" name="bien" id="bien" placeholder="Nom du Bien">
+                    </div>
+                    <div>
+                        <select name="plateforme" id="plateforme"></select>
+                    </div>
+                    <h4>Envoyer une image</h4>
+                    <div id="upload">
+                        <input type="file" name="fichier" id="fichier">
+                        <label for="fichier">
+                            <div>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </label>
+                        <p></p>
+                    </div>
+                    <div id="submit">
+                        <input type="submit" value="Créer" disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- MODALE -->
+
+
+<!-- LOADER -->
+    <section id="sectionLoad">
+        <div id="loader">
+            <div class="load1"></div>
+            <div class="load2"></div>
+            <div class="load3"></div>
+        </div>
+    </section>
+<!-- LOADER -->
+
+
+    <script src="https://kit.fontawesome.com/50786edb2e.js" crossorigin="anonymous"></script>
+    <script src="medias/js/bien-readAll.js"></script>
+    <script src="medias/js/modale.js"></script>
+    <script src="medias/js/bien-insert.js"></script>
+</body>
+</html>

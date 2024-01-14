@@ -1,0 +1,26 @@
+#loading {
+    display: none;
+    text-align: center;
+}
+#loading.active {
+    display: block;
+}
+#loading div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: inline-block;
+    animation: loader 1.5s infinite;
+}
+#loading .load1 {
+    animation-delay: -0.5s;
+}
+#loading .load3 {
+    animation-delay: -0.25s;
+}
+
+@keyframes loader {
+    0%, 70%, 100% { transform: scale(0); }
+    35% { transform: scale(1); }
+}

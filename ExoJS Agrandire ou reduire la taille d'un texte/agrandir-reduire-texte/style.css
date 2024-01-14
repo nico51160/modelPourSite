@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+}
+
+/* HEADER */
+header {
+    background-color: #fff;
+    padding: 20px;
+}
+header h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV */
+nav {
+    background-color: #000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    list-style: none;
+    padding: 10px 40px;
+}
+nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18px;
+    transition: 0.5s;
+}
+nav a:hover {
+    color: burlywood;
+    transition: 0.5s;
+}
+
+
+/* ARTICLE */
+article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+/* SECTION */
+section {
+    width: 75%;
+    padding-right: 20px;
+}
+section ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-weight: bold;
+}
+section li {
+    list-style: none;
+    padding: 2px;
+}
+section li::after {
+    content: " /";
+}
+section li:last-child::after {
+    content: "";
+}
+section p {
+    text-align: justify;
+    font-size: 14px;
+}
+section a {
+    text-decoration: none;
+    color: darkblue;
+}
+section a:hover {
+    text-decoration: underline;
+}
+section h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #aaa;
+}
+
+/* ASIDE */
+aside {
+    width: 25%;
+    text-align: center;
+}
+aside h4 {
+    text-align: left;
+    background-color: #000;
+    color: honeydew;
+    padding: 7px;
+    font-size: 17px;
+}
+aside button {
+    cursor: pointer;
+    padding: 3px 14px;
+    font-size: 18px;
+    margin: 7px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+aside button:hover {
+    background-color: #000;
+    color: #ccc;
+}
+aside div {
+    border-top: 2px solid #000;
+    margin-top: 15px;
+}
+aside #info {
+    text-align: left;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #aaa;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 900px) {
+    article {
+        flex-direction: column;
+    }
+    section {
+        width: 100%;
+    }
+    aside {
+        order: -1;
+        width: 100%;
+    }
+}

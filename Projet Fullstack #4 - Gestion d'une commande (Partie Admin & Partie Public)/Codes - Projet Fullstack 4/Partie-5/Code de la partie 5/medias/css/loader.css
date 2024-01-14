@@ -1,0 +1,32 @@
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    background-color: rgba(0,0,0,0.8);
+
+    display: none;
+}
+#loading.active {
+    display: block;
+}
+
+.loader {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid rgba(233,82,22,0.5);
+    border-top: 5px solid rgb(233,82,22);
+    animation: tourner 1s linear infinite;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes tourner {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
