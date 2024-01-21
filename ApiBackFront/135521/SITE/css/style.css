@@ -1,0 +1,92 @@
+body {
+	background-color: #f3f3f3;
+}
+#head {
+	text-align: right;
+}
+#conteneur {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.items {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	height: 300px;
+	margin: 25px;
+	font-family: arial;
+	border-radius: 20px;
+	width: 300px;
+}
+.modif {
+	height: auto;
+	margin: 0;
+	width: 500px;
+}
+.items h2 {
+	text-align: center;
+}
+.items p {
+	text-align: justify;
+	color: #333;
+}
+.items a, #head a {
+	text-decoration: none;
+	color: #6cf;
+	transition: 0.5s;
+}
+.items a:hover, #head a:hover {
+	text-decoration: underline;
+	color: #00f;
+	transition: 0.5s;
+}
+
+
+input, textarea {
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+	padding: 15px;
+	border: none;
+	border-bottom: 1px solid #333;
+	outline: none;
+}
+input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 6px;
+	background-color: #F90;
+	margin-top: 20px;
+	transition: 0.5s;
+}
+input[type="submit"]:hover {
+	background-color: #F60;
+	transition: 0.5s;
+}
+#reponse {
+	text-align: center;
+}
+.imgLoading {
+	width: 75px;
+}
+.red {
+	color: #f03;
+}
+.green {
+	color: #060;
+}
+
+
+
+
+
+
+
+
+
+
+

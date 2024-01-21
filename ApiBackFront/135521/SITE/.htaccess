@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^([0-9]+).html$ tuto.php?tutoID=$1 [L]
+RewriteRule ^update-([0-9]+).html$ update.php?tutoID=$1 [L]
+RewriteRule ^delete-([0-9]+).html$ delete.php?tutoID=$1 [L]

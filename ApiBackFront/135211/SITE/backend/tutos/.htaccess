@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteRule ^api/readAll$ readAll.php [L]
+RewriteRule ^api/readAll/$ readAll.php [L]
+RewriteRule ^api/read$ read.php [L]
+RewriteRule ^api/read/$ read.php [L]
+RewriteRule ^api/read/([0-9]+)$ read.php?tutoID=$1 [L]
+RewriteRule ^api/read/([0-9]+)/$ read.php?tutoID=$1 [L]
+RewriteRule ^api/create$ create.php [L]
+RewriteRule ^api/create/$ create.php [L]
+RewriteRule ^api/update$ update.php [L]
+RewriteRule ^api/update/$ update.php [L]
+RewriteRule ^api/delete$ delete.php [L]
+RewriteRule ^api/delete/$ delete.php [L]
