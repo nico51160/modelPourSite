@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-image: url('/garage-automobile/public/images/home/background.jpg');
+}
+
+.container,
+.nav-container {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-detail {
+    height: 300px;
+    object-fit: cover;
+}
+
+.spn {
+    color: white;
+    transition: color 0.3s;
+}
+
+.spn:hover {
+    color: black;
+}
+
+.login {
+    margin-top: 70px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(228, 27, 27, 0.1);
+    transform: translateY(-5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.rouge {
+    color: rgb(146,45,45);
+}
+.vert {
+    color: #0a0;
+}
+.bordureRouge {
+    border: 2px solid #a00;
+    background-color: rgba(228,131,131,0.5);
+}
+.bordureVert {
+    border: 2px solid #0a0;
+    background-color: rgba(159,224,122,0.5);
+}
