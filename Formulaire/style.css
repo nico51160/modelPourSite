@@ -1,0 +1,51 @@
+body {
+    background-color: #f3f3f3;
+}
+#box {
+    width: 75%;
+    padding: 15px;
+    font-family: arial;
+    font-size: 13px;
+    margin: auto;
+}
+#box h1 {
+    text-align: center;
+}
+#box input {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    outline: none;
+}
+#box input[type="submit"] {
+    cursor: pointer;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+#box input[type="submit"]:hover {
+    color: #0a0;
+}
+#box span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+#box strong {
+    display: block;
+    margin-top: 7px;
+}
+
+.rouge {
+    color: rgb(146,45,45);
+}
+.vert {
+    color: #0a0;
+}
+.bordureRouge {
+    border: 2px solid #a00;
+    background-color: rgba(228,131,131,0.5);
+}
+.bordureVert {
+    border: 2px solid #0a0;
+    background-color: rgba(159,224,122,0.5);
+}
